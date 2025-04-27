@@ -57,7 +57,7 @@
 
                     <!-- 6th cards -->
 
-                    <div class="box cursor-pointer border p-4 text-center rounded-md">
+                    <div id="transaction-box" class="box cursor-pointer border p-4 text-center rounded-md">
                         <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="">
                         <h3>Transactions</h3>
                     </div>
@@ -73,7 +73,7 @@
                           <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
                             <div class="card-body">
                                 <legend class="font-bold">Select A Bank</legend>
-                                <select class="select">
+                                <select id="allbank" class="select">
                                     <option disabled selected>Select Bank</option>
                                     <option value="Bkash">Bkash</option>
                                     <option value="Nagad">Nagad</option>
@@ -125,6 +125,11 @@
                 <section id="transection-history">
                     <h1 class="text-3xl font-bold text-red-400 text-center p-3">Transection History</h1>
 
+
+                    <div id="transection-container">
+
+                    </div>
+
                 </section>
 
             </section>
@@ -138,5 +143,6 @@
     <script src="./utilities/utilities.js"></script>
     <script src="./script/addmoney.js"></script>
     <script src="./script/cashout.js"></script>
+    <script src="./script/transectionHistory.js"></script>
 </body>
 </html>
